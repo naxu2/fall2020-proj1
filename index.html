@@ -2,17 +2,56 @@
 <html>
 	<head>
 		<!--Metadata, Setup Info, File Imports -->
-	<style> 
+	<style>
+	
+	 p {
+	  font-size: large;
+	}
+	.b {
+	  font-size: medium;
+	}
+	.img { 
+	  width: 100%;
+	  height: auto;
+	  opacity: 0.3;
+	}
+		div.sticky {
+	  position: -webkit-sticky; /* Safari */
+	  position: sticky;
+	  top: 0;
+	  background-color: green;
+	  border: 2px solid #4CAF50;
+	}
+	div.relative {
+  	position: relative;
+  	left: 250px;
+  	width: 400px;
+  	height: 200px;
+  	border: 3px solid #73AD21;
+	}
+	div.absolute {
+	  position: absolute;
+	  top: 80px;
+	  right: 0;
+	  width: 200px;
+	  height: 100px;
+	  border: 3px solid #73AD21;
+	}
 
+	div.static {
+ 	position: static;
+  	border: 3px solid #73AD21;
+	}
 	aside {
-  width: 30%;
-  padding-left: 15px;
-  margin-left: 15px;
-  float: right;
-  font-style: italic;
-  background-color: lightgray;
-}
+ 	 width: 30%;
+  	padding-left: 15px;
+ 	 margin-left: 15px;
+  	float: right;
+  	font-style: italic;
+ 	 background-color: lightgray;
+	}
 	</style>
+
 		<meta charset="utf-8">
 		<meta viewport="utf-8" content="width=device-width,initial-scale=1.0">
 		<title>Proj 1</title>
@@ -21,18 +60,54 @@
 	</head>
 	<body>
 		<!--All pages content -->
-		<h1>Project 1</h1>
-		<p>WHEN THE FIERCEST hurricane ever recorded in the Atlantic is bearing down on you, a salvaged armchair under a wood-and-tin awning might seem a poor choice of shelter. But that's where Don E. ("I'd rather keep my last name out of it") was parked when Wilma hit South Florida at 6:30 a.m. last October 24. For Don and a buddy, it was the start of the workday at Jimbo's Place, a ramshackle beer and bait shop down by the water on Miami's Virginia Key. "Once we got out here, it was kind of too late to do anything but ride it out," Don says with a small laugh.
+		<div class="sticky"><h1>Storm</h1></div>	
+		<p>
+			WHEN THE FIERCEST hurricane ever recorded in the Atlantic is bearing down on you, a salvaged armchair under a wood-and-tin awning might seem a poor choice of shelter. But that's where Don E. ("I'd rather keep my last name out of it") was parked when Wilma hit South Florida at 6:30 a.m. last October 24. For Don and a buddy, it was the start of the workday at Jimbo's Place, a ramshackle beer and bait shop down by the water on Miami's Virginia Key. "Once we got out here, it was kind of too late to do anything but ride it out," Don says with a small laugh.
 		</p>
-		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS884l-f4tBTpOJUu6gobeWKyg8BlqTUQvdxg&usqp=CAU" class="img-fluid" alt="Responsive image">
-		
-		<aside>
-<p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-</aside>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS884l-f4tBTpOJUu6gobeWKyg8BlqTUQvdxg&usqp=CAU" alt="Responsive image">
 
-		<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
-		<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+	
+
+		<div class="static">
+		My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</div>
+
+		<div class="relative">
+		My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family! seem a poor choice of shelter. But that's where Don E. ("I'd rather keep my last name out of it") was parked when Wilma hit South Florida at 6:30 a.m. last October 24. For Don and a buddy, it was the start of the workday at Jimbo's Place, a ramshackle beer and bait shop down by the water on Miami's Virginia Key. "Once we got out here, it was kind of too late to do anything but ride it out," Don says with a small laugh.</div>
 		
+		<img src="https://images.unsplash.com/photo-1472145246862-b24cf25c4a36?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHw%3D&w=1000&q=80" alt="Responsive image">
+		<!-- grid layout -->
+		<h2>Grid Layout</h2>
+
+			<p>This grid layout contains six columns and three rows:</p>
+
+			<div class="grid-container">
+			  <div class="item1">
+			  piranhas
+			</div>
+
+			  <div class="item2">
+			  	<div class="dropdown">
+		 		 <button class="dropbtn">Dropdown</button>
+				  <div class="dropdown-content">
+				  	<div class="b">
+				    <a href="#">Link 1</a>
+				    <a href="#">Link 2</a>
+				    <a href="#">Link 3</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="item3"> <p>Piranha, also called caribe or piraya, any of more than 60 species of razor-toothed carnivorous fish of South American rivers and lakes, with a somewhat exaggerated reputation for ferocity. In movies such as Piranha (1978), the piranha has been depicted as a ravenous indiscriminate killer. Most species, however, are scavengers or feed on plant material.
+				</p> </div>  
+			  <div class="item4">
+			  			<img src="https://cdn.britannica.com/s:700x500/82/215582-050-9396C8FB/Piranha-fish-teeth-exposed.jpg" alt="Piranha" width="250" height="171">
+			  </div>
+			  <div class="item5"><p>Piranha, also called caribe or piraya, any of more than 60 species of razor-toothed carnivorous fish of South American rivers and lakes, with a somewhat exaggerated reputation for ferocity. In movies such as Piranha (1978), the piranha has been depicted as a ravenous indiscriminate killer. Most species, however, are scavengers or feed on plant material.
+				</p></div>
+			</div>
+		 
+
 		<!-- Add scripts -->
 		<script src="inc/js/script.js"></script>
 	</body>
